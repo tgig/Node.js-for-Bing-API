@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Bing API example</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<br>
+	<div class="container">
+		
+		<div class="hero-unit">
+			<h1>Bing API Example</h1>
+			<div>Using Node.js, Express, Require, Plates, to call, return, output data from Bing API</div>
+		</div>
+
+
+	
+		<div class="row">
+			<div class="span1">&nbsp;</div>
+			<div class="span11">
+				<h2>Enter a search term</h2>
+
+				<form class="form-search" method="post" action="/template">
+					<input type="text" name="txtSearchTerm" class="input-large search-query" placeholder="Search term" style="height: 30px;">	
+					<button class="btn" type="submit">Search</button>
+				</form>
+				
+				<br>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="span1">&nbsp;</div>
+			<div class="span5"><h3>Results</h3></div>
+		</div>
+		<div class="row">
+			<div class="span1">&nbsp;</div>
+			<div class="span8"><div class="divResults"></div></div>
+		</div>
+
+
+		
+
+	</div>
+
+</body>
+</html>
