@@ -4,8 +4,9 @@ try {
 	config = require('./config');
 }
 catch (e) {
-	config = {}
-	config.BingApi.key = process.env.BING_API_KEY;
+	config = {};
+	config.BingAPI = {};
+	config.BingApi.key = process.env.BING_API_KEY; //'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web?$format=json&Query=';
 	config.BingApi.url = process.env.BING_API_URL;
 }
 
