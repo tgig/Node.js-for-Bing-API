@@ -6,8 +6,8 @@ try {
 catch (e) {
 	config = {};
 	config.BingAPI = {};
-	config.BingApi.key = process.env.BING_API_KEY; //'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web?$format=json&Query=';
-	config.BingApi.url = process.env.BING_API_URL;
+	config.BingAPI.key = process.env.BING_API_KEY; //'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web?$format=json&Query=';
+	config.BingAPI.url = process.env.BING_API_URL;
 }
 
 //include express
