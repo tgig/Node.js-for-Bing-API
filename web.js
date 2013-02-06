@@ -11,7 +11,8 @@ catch (e) {
 
 //include express
 var express = require('express');
-var app = express();
+//var app = express();
+var app = express.createServer(express.logger());
 app.use(express.bodyParser());
 
 //pull data from web

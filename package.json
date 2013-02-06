@@ -1,9 +1,9 @@
 {
 	"name": "node-js-express-request-bing-api",
-	"description": "Use node.js and express and request to pull a query back from the Bing API",
+	"description": "Use node.js and express and request and Plates to pull a query back from the Bing API and display the results",
 	"version": "0.0.1",
 	"dependencies": {
-		"express": "3.x",
+		"express": "2.5.x",
     	"request": "2.x",
     	"plates": "0.4.x"
 	}
