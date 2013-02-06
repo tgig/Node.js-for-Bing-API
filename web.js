@@ -1,5 +1,13 @@
 //include config file
-var config = require('./config');
+var config = null;
+try {
+	config = require('./config');
+}
+catch (e) {
+	config = {}
+	config.BingApi.key = process.env.BING_API_KEY;
+	config.BingApi.url = process.env.BING_API_URL;
+}
 
 //include express
 var express = require('express');
