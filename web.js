@@ -6,8 +6,8 @@ try {
 catch (e) {
 	config = {};
 	config.BingAPI = {};
-	config.BingAPI.key = process.env.BING_API_KEY; //'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web?$format=json&Query=';
-	config.BingAPI.url = process.env.BING_API_URL;
+	config.BingAPI.key = process.env.BING_API_KEY; 
+	config.BingAPI.url = process.env.BING_API_URL; //'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web?$format=json&Query=';
 }
 
 //include express
@@ -35,7 +35,7 @@ app.get('/test', function (req, res) {
 
 
 //load the template which contains search form
-app.get('/template', function (req, res) {
+app.get('/', function (req, res) {
 	fs.readFile('./templates/template-search.html', 'utf8', function (err, html) {
 		if (err) {
 			return console.log(err);
@@ -46,7 +46,7 @@ app.get('/template', function (req, res) {
 });
 
 //template post-back, calls Bing API, loops through results and outputs
-app.post('/template', function (req, res) {
+app.post('/', function (req, res) {
 	fs.readFile('./templates/template-search.html', 'utf8', function (err, html) {
 		if (err) {
 			return console.log(err);
